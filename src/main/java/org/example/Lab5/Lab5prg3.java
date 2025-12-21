@@ -1,13 +1,13 @@
 package org.example.Lab5;
 
-
+// Base class
 class Shape {
-    double getArea() {
+    public double getArea() {
         return 0;
     }
 }
 
-
+// Rectangle subclass
 class Rectangle extends Shape {
     double width;
     double height;
@@ -18,11 +18,10 @@ class Rectangle extends Shape {
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         return width * height;
     }
 }
-
 
 public class Lab5prg3 {
     public static void main(String[] args) {

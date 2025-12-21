@@ -7,7 +7,7 @@ class Animal {
 }
 
 
-class Cat extends Animal {
+class Cat extends animal {
     @Override
     void makeSound() {
         System.out.println("Cat barks");
@@ -17,7 +17,12 @@ class Cat extends Animal {
 
 public class Lab5prg1 {
     public static void main(String[] args) {
-        Animal myAnimal = new Animal();
+        animal myAnimal = new animal() {
+            @Override
+            void makeSound() {
+
+            }
+        };
         myAnimal.makeSound();
 
         Cat myCat = new Cat();
